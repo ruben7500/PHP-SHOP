@@ -1,0 +1,88 @@
+/* Styles généraux */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa;
+}
+
+/* Navbar */
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+/* Cards */
+.card {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border: none;
+    margin-bottom: 1rem;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Hero Section */
+.hero-section {
+    margin-top: -16px;
+}
+
+.hero-image {
+    overflow: hidden;
+}
+
+/* Featured Products */
+.card-img-top {
+    transition: transform 0.5s;
+}
+
+.card:hover .card-img-top {
+    transform: scale(1.05);
+}
+
+/* Testimonials */
+.card .fas.fa-star, .card .fas.fa-star-half-alt {
+    color: #ffc107;
+}
+
+/* Why Choose Us */
+.bg-primary.bg-opacity-10 {
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.p-3:hover .bg-primary.bg-opacity-10 {
+    transform: scale(1.1);
+    background-color: rgba(13, 110, 253, 0.2) !important;
+}
+
+/* Newsletter */
+.form-control-lg:focus {
+    border-color: #0d6efd;
+    box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+}
+
+/* Brands */
+.opacity-75.transition {
+    transition: opacity 0.3s;
+}
+
+.opacity-75.transition:hover {
+    opacity: 1 !important;
+}
+
+/* Animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translate3d(0, 30px, 0);
+    }
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+.fadeInUp {
+    animation: fadeInUp 0.5s ease-out;
+}
